@@ -1,0 +1,58 @@
+:root {
+    --color-black: #111;
+    --color-dark: #333;
+    --color-light-dark: #404143;
+    --color-gray: #61666A;
+    --color-light-gray: #dadada;
+    --color-white: #fff;
+    --color-success: #60fe3a;
+    --color-attention: #fe923a;
+    --color-error: #fe413a;
+    --color-light-green: #DDF67C;
+
+    --input-color-bg: #3c3d3f;
+    --input-color-border: #7b7f7f;
+    --input-color-border-light: #d4d6d7;
+    --input-color-border-active: #96cc0c;
+
+    --scroll-track-color-bg: #3c3d3e;
+    --scroll-track-color-border-bottom: #61666a;
+    --scroll-thumb-color-bg: #96cc0e;
+    --scroll-thumb-color-border-top: #def0b6;
+    --scroll-thumb-color-border-bottom: #4d6017;
+    --scroll-corner-color-bg: #96cc0e;
+
+    --td-color-bg-hover: #707377FF;
+    --tr-color-bg-checked: #6c9408;
+    --tr-color-bg-checked-hover: #84b409;
+    --th-color-border: #7b7f7f;
+    --th-color-border-bottom: #08070b;
+    --th-color-border-left: #575757;
+    --th-color-border-right: #1f2123;
+    --th-color-top-bg: #2b2d2e;
+    --th-color-bottom-bg: #404243;
+
+    --font-family: 'Roboto', 'Verdana', serif;
+
+    --font-size-h1: 6rem;
+    --font-size-h2: 3.4rem;
+    --font-size-h3: 2.8rem;
+    --font-size-h4: 2.4rem;
+    --font-size-h5: 1.8rem;
+    --font-size-text: 2rem;
+
+    --line-height-text: 1.5;
+    --line-height-title: 1.1;
+}
+
+$desktop-x: 1920px;
+$desktop-m: 1440px;
+$desktop-s: 1280px;
+
+$tablet-x: 1024px;
+$tablet-m: 991px;
+$tablet-s: 767px;
+
+$mobile-x: 479px;
+$mobile-m: 375px;
+$mobile-s: 320px;

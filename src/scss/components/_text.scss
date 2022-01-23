@@ -1,0 +1,23 @@
+.text {
+  @include font( $size: var(--font-size-text));
+}
+
+.text--m {
+  font-size: 1.8rem;
+}
+
+.text--s {
+  font-size: 1.6rem;
+}
+
+.text--sm {
+  font-size: 1.4rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}

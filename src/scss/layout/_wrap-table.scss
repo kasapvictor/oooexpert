@@ -1,0 +1,32 @@
+.wrap-table {
+  max-height: 600px;
+  padding: 0;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 2px 1px 1px rgba(0, 0, 0, 0.5);
+    background: var(--scroll-track-color-bg);
+    border: 1px solid transparent;
+    border-bottom-color: var(--scroll-track-color-border-bottom);
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color-bg);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    border-top-color: var(--scroll-thumb-color-border-top);
+    border-bottom-color: var(--scroll-thumb-color-border-bottom);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: var(--scroll-corner-color-bg);
+    border-radius: 6px;
+  }
+}
+

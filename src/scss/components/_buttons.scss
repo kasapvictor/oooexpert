@@ -1,0 +1,21 @@
+.form__submit {
+  width: 100%;
+  padding: 12px 20px;
+  line-height: 1;
+  border: 1px solid var(--input-color-border);
+  border-radius: 8px;
+  background: linear-gradient(to top, var(--color-dark),var(--color-gray));
+  @extend %transition-2;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to top, var(--color-dark) 30% ,var(--color-gray) 70%);
+    border: 1px solid var(--color-light-green);
+  }
+  &:active {
+    background: linear-gradient(to top, var(--color-dark) 10% ,var(--color-gray) 90%);
+  }
+}
+
+
+

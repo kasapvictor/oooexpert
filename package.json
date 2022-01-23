@@ -1,0 +1,115 @@
+{
+  "name": "oooexpert",
+  "version": "1.0.0",
+  "main": "index.html",
+  "description": "ООО 'Эксперт'",
+  "scripts": {
+    "browser": "parcel src/*.html --out-dir prod/ --open",
+    "build": "rm -rf ./prod && NODE_ENV=production  parcel build src/index.html src/month.html --out-dir prod/ --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "autoprefixer": "^9.7.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.17",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "sass": "^1.32.13"
+  },
+  "dependencies": {
+    "postcss-modules": "^1.4.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 1%",
+          "last 4 versions",
+          "ie >= 9"
+        ]
+      }
+    }
+  },
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "minifyFontValues": {
+          "removeQuotes": false
+        },
+        "normalizeUrl": false
+      }
+    ]
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": 2,
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "styles",
+      ".css.map": "styles",
+      ".js": "scripts",
+      ".js.map": "scripts",
+      ".ttf": "fonts",
+      "images": [
+        ".jpg",
+        ".png",
+        ".svg",
+        ".gif",
+        ".ttf",
+        ".bmp"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [
+        ".file",
+        ".extensions"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  },
+  "imagemin": {
+    "gifsicle": {
+      "optimizationLevel": 2,
+      "interlaced": false,
+      "colors": 10
+    },
+    "mozjpeg": {
+      "progressive": true,
+      "quality": 60
+    },
+    "pngquant": {
+      "quality": [
+        0.25,
+        0.5
+      ]
+    },
+    "svgo": {
+      "plugins": [
+        {
+          "removeViewBox": false
+        },
+        {
+          "cleanupIDs": true
+        }
+      ]
+    },
+    "webp": {
+      "quality": 10
+    }
+  }
+}

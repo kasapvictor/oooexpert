@@ -1,0 +1,36 @@
+.input__checkbox {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--input-color-bg);
+    border: 1px solid var(--input-color-border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &:hover:before {
+    border-color: var(--input-color-border-active);
+  }
+
+  &:checked:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: var(--input-color-border-active);
+    border: 1px solid var(--input-color-border-light);
+    border-radius: 2px;
+    overflow: hidden;
+    @extend %transition-2;
+  }
+}
